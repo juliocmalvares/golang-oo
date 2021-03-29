@@ -44,7 +44,7 @@ func (c *ContaCorrente) Saldo() float64 {
 // funcão de format para print
 
 func (co ContaCorrente) Format(f fmt.State, c rune) {
-	var value string = ""
+	var value string = "--- Conta Corrente ---\n"
 	value += "Titular: " + co.Titular.Nome + "\n"
 	value += "Agencia: " + fmt.Sprintf("%d", co.NumeroAgencia) + "\n"
 	value += "Conta: " + fmt.Sprintf("%d", co.NumeroConta) + "\n"
